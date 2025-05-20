@@ -1,10 +1,15 @@
-# Reddit Mental Health Sentiment
+
 
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
 
-This project analyzes sentiment in mental health-related Reddit posts during the COVID-19 pandemic using natural language processing (NLP) techniques. The goal is to quantify emotional tone across user posts from subreddits such as r/depression and r/anxiety and assess how sentiment may have shifted due to pandemic-related stressors
+
+# Reddit Mental Health Sentiment Analysis During COVID-19
+
+This project uses natural language processing (NLP) and statistical modeling to analyze sentiment in Reddit mental health communities during the COVID-19 pandemic. It is structured using the Cookiecutter Data Science (CCDS) framework for modularity, reproducibility, and clarity.
+
+We evaluate whether Reddit posts express significantly negative sentiment, whether sentiment changed during the pandemic, and whether post characteristics like length can predict emotional tone. All code and visualizations are organized in a clear, scalable directory structure.
 
 ## Project Organization
 
@@ -58,4 +63,23 @@ This project analyzes sentiment in mental health-related Reddit posts during the
 ```
 
 --------
+
+
+
+##  How to Replicate This Pipeline
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/ikercruz/reddit-mental-health-analysis.git
+cd reddit-mental-health-analysis
+
+conda env create -f environment.yml
+conda activate reddit-nlp
+
+data/raw/reddit_dataset.csv
+
+notebooks/01_eda_sentiment.ipynb
+
+ 
 
